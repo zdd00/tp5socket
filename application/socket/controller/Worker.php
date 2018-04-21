@@ -3,10 +3,11 @@
 namespace app\socket\controller;
 
 use think\worker\Server;
+use app\socketHost;
 
 class Worker extends Server
 {
-    protected $socket = 'websocket://127.0.0.1:2346';
+    protected $socket = 'websocket://8.9.3.222:2346';
 
     /**
      * 收到信息
@@ -33,7 +34,7 @@ class Worker extends Server
      */
     public function onClose($connection)
     {
-        
+
     }
 
     /**
