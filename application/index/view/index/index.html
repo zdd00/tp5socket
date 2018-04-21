@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    ws = new WebSocket("ws://zdd00.ngrok.xiaomiqiu.cn");
+    ws = new WebSocket("ws://127.0.0.1:2346");
     ws.onopen = function() {
         console.log("连接成功");
         ws.send('tom');
