@@ -9,10 +9,11 @@ class Message
 {
     public function onMessage($client_id, $message = '')
     {
-        Gateway::$registerAddress = '127.0.0.1:1236';
+        Gateway::$registerAddress='127.0.0.1:1238';
         Gateway::sendToClient($client_id, json_encode(array(
             'type' => 'connect',
             'client_id' => $client_id
         )));
+        Gateway::sendToAll('11');
     }
 }
