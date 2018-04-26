@@ -7,7 +7,7 @@ use app\socketHost;
 
 class Worker extends Server
 {
-    protected $socket = 'websocket://8.9.3.222:2346';
+    protected $socket = 'websocket://0.0.0.0:2346';
 
     /**
      * 收到信息
